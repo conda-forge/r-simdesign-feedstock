@@ -3,11 +3,15 @@ About r-simdesign-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-simdesign-feedstock/blob/main/LICENSE.txt)
 
-Home: http://philchalmers.github.io/SimDesign/, https://github.com/philchalmers/SimDesign/wiki
+Home: https://philchalmers.github.io/SimDesign/
 
 Package license: GPL-2.0-or-later
 
 Summary: Provides tools to safely and efficiently organize and execute Monte Carlo simulation experiments in R. The package controls the structure and back-end of Monte Carlo simulation experiments by utilizing a generate-analyse-summarise workflow. The workflow safeguards against common simulation coding issues, such as automatically re-simulating non-convergent results, prevents inadvertently overwriting simulation files, catches error and warning messages during execution, implicitly supports parallel processing with high-quality random number generation, and provides tools for managing high-performance computing (HPC) array jobs submitted to schedulers such as SLURM. For a pedagogical introduction to the package see Sigal and Chalmers (2016) <doi:10.1080/10691898.2016.1246953>. For a more in-depth overview of the package and its design philosophy see Chalmers and Adkins (2020) <doi:10.20982/tqmp.16.4.p248>.
+
+Development: https://github.com/philchalmers/SimDesign
+
+Documentation: https://github.com/philchalmers/SimDesign/wiki
 
 Current build status
 ====================
