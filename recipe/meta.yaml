@@ -1,4 +1,4 @@
-{% set version = "2.19.2" %}
+{% set version = "2.20.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SimDesign_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SimDesign/SimDesign_{{ version }}.tar.gz
-  sha256: bc1dd75c4b9e559796dd235fc789c3cd2a116f5d62026d005d0a9347f79c95dd
+  sha256: 90ec7e190e9b2b5ee89d2b4babcff3e2a14e6819800fcdace9b7bad91510d303
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-r.utils
     - r-beepr
     - r-dplyr
     - r-future
@@ -35,11 +36,11 @@ requirements:
     - r-parallelly
     - r-pbapply >=1.3_0
     - r-progressr
-    - r-r.utils
     - r-sessioninfo
     - r-testthat
   run:
     - r-base
+    - r-r.utils
     - r-beepr
     - r-dplyr
     - r-future
@@ -47,7 +48,6 @@ requirements:
     - r-parallelly
     - r-pbapply >=1.3_0
     - r-progressr
-    - r-r.utils
     - r-sessioninfo
     - r-testthat
 
