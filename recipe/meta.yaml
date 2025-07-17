@@ -28,6 +28,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-r.utils
     - r-beepr
     - r-dplyr
     - r-future
@@ -35,11 +36,11 @@ requirements:
     - r-parallelly
     - r-pbapply >=1.3_0
     - r-progressr
-    - r-r.utils
     - r-sessioninfo
     - r-testthat
   run:
     - r-base
+    - r-r.utils
     - r-beepr
     - r-dplyr
     - r-future
@@ -47,7 +48,6 @@ requirements:
     - r-parallelly
     - r-pbapply >=1.3_0
     - r-progressr
-    - r-r.utils
     - r-sessioninfo
     - r-testthat
 
