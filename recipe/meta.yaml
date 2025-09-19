@@ -30,6 +30,8 @@ requirements:
     - r-base
     - r-r.utils
     - r-beepr
+    - r-clipr
+    - r-codetools
     - r-dplyr
     - r-future
     - r-future.apply
@@ -42,6 +44,8 @@ requirements:
     - r-base
     - r-r.utils
     - r-beepr
+    - r-clipr
+    - r-codetools
     - r-dplyr
     - r-future
     - r-future.apply
