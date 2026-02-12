@@ -1,4 +1,4 @@
-{% set version = "2.22" %}
+{% set version = "2.23" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/SimDesign_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/SimDesign/SimDesign_{{ version }}.tar.gz
-  sha256: 0c7f7acaf4ca81eef37d6efeffe6f87f9a0fa59d7d135eec12c3d25f74b6bab0
+  sha256: 60b9360e69265ca0719ef09a4e129f35b8381cbe28372a35087f425760ef8da4
 
 build:
   number: 0
@@ -33,6 +33,7 @@ requirements:
     - r-clipr
     - r-codetools
     - r-dplyr
+    - r-e1071
     - r-future
     - r-future.apply
     - r-parallelly
@@ -47,6 +48,7 @@ requirements:
     - r-clipr
     - r-codetools
     - r-dplyr
+    - r-e1071
     - r-future
     - r-future.apply
     - r-parallelly
@@ -65,9 +67,9 @@ about:
   dev_url: https://github.com/philchalmers/SimDesign
   doc_url: https://github.com/philchalmers/SimDesign/wiki
   license: GPL-2.0-or-later
-  summary: Provides tools to safely and efficiently organize and execute Monte Carlo simulation experiments in R. The package controls the structure and back-end of Monte Carlo simulation experiments by utilizing a generate-analyse-summarise workflow. The workflow safeguards against common simulation coding issues, such
-    as automatically re-simulating non-convergent results, prevents inadvertently overwriting simulation files, catches error and warning messages during execution, implicitly supports parallel processing with high-quality random number generation, and provides tools for managing high-performance computing (HPC) array jobs
-    submitted to schedulers such as SLURM. For a pedagogical introduction to the package see Sigal and Chalmers (2016) <doi:10.1080/10691898.2016.1246953>. For a more in-depth overview of the package and its design philosophy see Chalmers and Adkins (2020) <doi:10.20982/tqmp.16.4.p248>.
+  summary: Provides tools to safely and efficiently organize and execute Monte Carlo simulation experiments in R. The package controls the structure and back-end of Monte Carlo simulation experiments by utilizing a generate-analyse-summarise workflow. The workflow safeguards against common simulation coding issues, 
+    such as automatically re-simulating non-convergent results, prevents inadvertently overwriting simulation files, catches error and warning messages during execution, implicitly supports parallel processing with high-quality random number generation, and provides tools for managing high-performance computing (HPC) 
+    array jobs submitted to schedulers such as SLURM. For a pedagogical introduction to the package see Sigal and Chalmers (2016) <doi:10.1080/10691898.2016.1246953>. For a more in-depth overview of the package and its design philosophy see Chalmers and Adkins (2020) <doi:10.20982/tqmp.16.4.p248>.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
