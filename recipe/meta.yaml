@@ -33,6 +33,7 @@ requirements:
     - r-clipr
     - r-codetools
     - r-dplyr
+    - r-e1071
     - r-future
     - r-future.apply
     - r-parallelly
@@ -47,6 +48,7 @@ requirements:
     - r-clipr
     - r-codetools
     - r-dplyr
+    - r-e1071
     - r-future
     - r-future.apply
     - r-parallelly
